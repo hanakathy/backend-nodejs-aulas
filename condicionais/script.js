@@ -59,17 +59,17 @@ switch(mes){
 
 //calcular reajuste salarial e imprimir no console log
 
-const profissao = ''
-const salario = 5000.00
+const profissao = 'Desenvolvedor Junior'
+let salario = 5000.00
 
 switch (profissao){
-    case "Desenvolvedor Junior":
+    case "Desenvolvedor Sênior":
         console.log("Salario: "+ (salario *= 2.15))
         break;
     case "Desenvolvedor Pleno":
         console.log("Salario: "+ (salario *= 1.10))
         break;
-    case "Desenvolvedor Senior":
+    case "Desenvolvedor Junior":
         console.log("Salario: "+ (salario *= 1.05))
         break;
     default:
