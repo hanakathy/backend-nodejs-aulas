@@ -1,0 +1,10 @@
+CINE-HOUSE
+
+DEVE {
+    armazenar o catalogo dentro de um vetor[],
+
+    CRIAR UM TÍTULO => [codigo, titulo, ano, diretor, genero, duracao, em cartaz],
+
+    Listar titulo
+
+}

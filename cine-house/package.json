@@ -2,9 +2,10 @@
   "name": "cine-house",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cinema.js",
   "scripts": {
-    "start": "nodemon cinema.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
   },
   "keywords": [],
   "author": "",
