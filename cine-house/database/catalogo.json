@@ -1,0 +1,31 @@
+[
+    {
+        "codigo": 1,
+        "titulo": "Star Wars Episodio I",
+        "anoDeLancamento": 1977,
+        "atores":[
+            "Mark Hamill", 
+            "Harrison Ford", 
+            "Carrie Fisher"
+            ],
+        "diretor":"George Lucas",
+        "genero":"Aventura",
+        "duracao": 2,
+        "emCartaz": false
+    },
+    {
+        "codigo": 2,
+       " titulo": "Inception",
+        "anoDeLancamento": 2010,
+        "atores":[
+            "Leonardo DiCaprio",
+            "Joseph Gordon-Levitt",
+            "Elliot Page"
+        ],
+        "diretor":"Christopher Nolan",
+        "genero":"Ação",
+        "duracao": 2,
+        "emCartaz": true
+    }
+  ]
+  
