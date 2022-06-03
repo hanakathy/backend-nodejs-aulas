@@ -8,8 +8,9 @@
 //Atualizações - Aula 08 (30/05): adicionando json e mais funções
 
 const catalogo = require("./database/catalogo.json");
+const listarFilmesDeLongaDuracao = require("./funcoes/listarFilmesDeLongaDuracao");
 
-function adicionarFilme(catalago, filme){
+function adicionarFilme(catalogo, filme){
     return catalogo.push(filme);
 }
 
@@ -22,8 +23,8 @@ adicionarFilme(catalogo,{
     "emCartaz": true
 });
 
-function buscarFilme(catalago, titulo){
-    const filme = catalago.find(filme => filme.titulo === titulo);
+function buscarFilme(catalogo, titulo){
+    const filme = catalogo.find(filme => filme.titulo === titulo);
     console.log("Lista de Filmes:")
 
     return filme;
@@ -36,21 +37,14 @@ function alterarStatusEmCartaz(catalogo, codigo){
     return catalogo;
 }
 
-function  listarTodosOsFilmes(catalago){
+function listarTodosOsFilmes(catalogo){
     //usando o forEach
     catalogo.forEach((filme) => {
-        return filme;
+        console.log(filme);
     })
 }
 
-function listarFilmesDeLongaDuracao(catalago){
-    //verificar, com if ternário, os filmes que tem mais de 2h de duracao
-    catalago.forEach((filme) =>{
-        filme.duracao >= 2 ? console.log(filme):''
-    })
-}
-
-function listarFilmesEmCartaz(catalago){
+function listarFilmesEmCartaz(catalogo){
     for(filme of catalogo){
         if(filme.emCartaz === true){
             return filme
@@ -58,3 +52,4 @@ function listarFilmesEmCartaz(catalago){
     }
 }
 
+console.log(listarFilmesDeLongaDuracao(catalogo))
